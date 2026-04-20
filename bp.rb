@@ -5,20 +5,20 @@
 class Bp < Formula
   desc "CLI for Bitpanda Developer API"
   homepage "https://github.com/bitpanda-labs/bitpanda-cli"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.1.0/bitpanda-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "984d30d77b21066efc379c5305cdfd16a37076bdf7d08d4104256f5e35344230"
+      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.2.0/bitpanda-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "5e2ebaada5511a51bf6e7aa4abb1d83a78be72d9534a879ae1ecd28617212c38"
 
       define_method(:install) do
         bin.install "bp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.1.0/bitpanda-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "dd3d80ff70fc877c1bbbaec04ae73b22cc394f95f6385f4765395b617b6f0e00"
+      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.2.0/bitpanda-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "05ffdb2c5c11ac9db61dece49f73ca747d62182648d48840a4a18cc6bdd8a27c"
 
       define_method(:install) do
         bin.install "bp"
@@ -28,15 +28,15 @@ class Bp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.1.0/bitpanda-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "591120b2f775681bc614c58917d8af4fe9bdebd1abc1c7c3207cddc64d4c70a2"
+      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.2.0/bitpanda-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "2211dacee383b941092f033b599f99c3976375372d7400ad21f319b56a849dd4"
       define_method(:install) do
         bin.install "bp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.1.0/bitpanda-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "7297702b824e715a483a77efc896384d262357392030fc0e3cc8e1d7faa8fa0c"
+      url "https://github.com/bitpanda-labs/bitpanda-cli/releases/download/v0.2.0/bitpanda-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "386ab7c8b47954371e487a2d2d99a1bc5f47f2991a0701da68bc681da7ebce4c"
       define_method(:install) do
         bin.install "bp"
       end
