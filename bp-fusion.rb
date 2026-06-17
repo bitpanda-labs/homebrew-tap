@@ -10,7 +10,7 @@ class BpFusion < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bitpanda-labs/bitpanda-fusion-cli/releases/download/v0.1.0/bitpanda-fusion-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cb9c81e12cdde89eeccc75db9b733abcf1def75e82d8898956d5b612cb641896"
+      sha256 "3c384aff914044b5fa1472465cad67b23ea6c60bc5c20f33d66da6be4cd7d714"
 
       define_method(:install) do
         bin.install "bp-fusion"
@@ -18,7 +18,7 @@ class BpFusion < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bitpanda-labs/bitpanda-fusion-cli/releases/download/v0.1.0/bitpanda-fusion-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1ff0c82576867041c68f4685041fb5682bc8b7eff6ea521845766adfaa10d054"
+      sha256 "dbd8daca9d043ce5e2efd208353adc9e8fb5646b28f36d45128c5837ae8bb69f"
 
       define_method(:install) do
         bin.install "bp-fusion"
@@ -29,14 +29,14 @@ class BpFusion < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bitpanda-labs/bitpanda-fusion-cli/releases/download/v0.1.0/bitpanda-fusion-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "e2b7a103b7f288511063e122a9783a6598e7907e5bf46c4745fd9eb1fed95e32"
+      sha256 "f206d335cf4784ea5316a277891a95e393625ddb5d476f63d8b5325c5bff9bc2"
       define_method(:install) do
         bin.install "bp-fusion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bitpanda-labs/bitpanda-fusion-cli/releases/download/v0.1.0/bitpanda-fusion-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "0143acc730e56d958cee4181e562eb5431a23d47b1aabec248cd9342a4dc5cb6"
+      sha256 "80bdf13180969f0cd17db9e1378008518d186f6b0d0b0abc3dde3dc322214fd8"
       define_method(:install) do
         bin.install "bp-fusion"
       end
